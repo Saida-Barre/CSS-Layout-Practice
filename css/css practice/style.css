@@ -1,0 +1,18 @@
+body{
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header > nav {
+    background-color: yellow;
+}

@@ -1,123 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CSS Practice Mockup</title>
-
-    <!-- Set the character set, so the browser knows which character set should be loaded and valid for this webpage. -->
-    <meta charset="UTF-8">
-
-    <!-- For modern responsive web development: -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Meta Data: -->
-    <meta name="description" content="A website without a real purpose, to demonstrate some CSS design.">
-    <meta name="author" content="James Grieve">
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-
-    <!-- Style(s): -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <!-- Script(s): -->
-    <!-- defer attribute will cause this script to wait until the body is loaded before executing (important for DOM / element manipulation by scripts) -->
-    <!-- <script src="js/scripts.js" type="text/javascript" defer></script> -->
-  </head>
-  <body class="flex">
-    <div id="container" class="border">
-        <header class="flex">
-            <h1 class="border"><img src="img/logo.png" alt="LOGO"></h1>
-            <!-- Topic Nav -->
-            <nav id="nav-topic" class="desktop-only">
-                
-                <ul class="flex">
-                    <li><a href="#">Topic 1</a></li>
-                    <li><a href="#">Topic 2</a></li>
-                    <li><a href="#">Topic 3</a></li>
-                    <li><a href="#">Topic 4</a></li>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="A CSS Mockup">
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/css practice/style.css">
+        
+        <!-- <script src="js/scripts.js" type="text/javascript" defer></script>  --> 
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img src="img/logo.png" alt="Logo"/>
+            </h1>
+            <!--topic nav>-->
+            <nav>
+                <ul>
+                    <li>Topic 1</li>
+                    <li>Topic 2</li>
+                    <li>Topic 3</li>
+                    <li>Topic 4</li>
                 </ul>
-                <input type="text">
+                <input type="text" placeholder="search"/>
+            </nav>
+            <!--page nav-->
+            <nav>
+                <ul>
+                    <li>Page 1</li>
+                    <li>Page 2</li>
+                    <li>Page 3</li>
+                    <li>Page 4</li>
+                </ul>
             </nav>
         </header>
         <main>
-            <!-- Above 'Green Line' Row-->
-            <!-- Page Nav -->
-            <nav id="nav-page" class="border">
-                <ul class="flex">
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                    <li><a href="#">Page 4</a></li>
+            <!--section nav>-->
+            <nav>
+                <ul>
+                    <li>Section 1</li>
+                    <li>Section 2</li>
+                    <li>Section 3</li>
+                    <li>Section 4</li>
+                    <li>Section 5</li>
+                    <li>Section 6</li>
+                    <li>Section 7</li>
+                    <li>Section 8</li>
+                    <li>Section 9</li>
+                    <li>Section 10</li>
+                    <li>Section 11</li>
+                    <li>Section 12</li>
+                    <li>Section 13</li>
+                    <li>Section 14</li>
+                    <li>Section 15</li>
+            
                 </ul>
             </nav>
-            <!-- Below 'Green Line' Row-->
-            <div class="flex">
-                <!-- Left of 'Purple Line' Column -->
-                <!-- Section Nav -->
-                <nav id="nav-section" class="border">
-                    <ul>
-                        <li><a href="#">Section 1</a></li>
-                        <li><a href="#">Section 2</a></li>
-                        <li><a href="#">Section 3</a></li>
-                        <li><a href="#">Section 4</a></li>
-                        <li><a href="#">Section 5</a></li>
-                        <li><a href="#">Section 6</a></li>
-                        <li><a href="#">Section 7</a></li>
-                        <li><a href="#">Section 8</a></li>
-                        <li><a href="#">Section 9</a></li>
-                        <li><a href="#">Section 10</a></li>
-                        <li><a href="#">Section 11</a></li>
-                        <li><a href="#">Section 12</a></li>
-                        <li><a href="#">Section 13</a></li>
-                        <li><a href="#">Section 14</a></li>
-                        <li><a href="#">Section 15</a></li>
-                    </ul>
-                </nav>
-                <!-- Right of 'Purple Line' Column -->
-                <div class="flex">
-                    <!-- Left of 'Blue Line' Column -->
-                    <article>
-                        <img src="img/article.png" alt="A Placeholder for Article Image">
-                        <div class="border">
-                            <h2>Main Article Y'all Are Here For</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                        </div>
-                    </article>
-                    <!-- Right of 'Blue Line' Column -->
-                    <div>
-                        <!-- Feature Nav -->
-                        <nav id="nav-feature" class="border">
-                            <ul>
-                                <li><a href="#">Feature 1</a></li>
-                                <li><a href="#">Feature 2</a></li>
-                                <li><a href="#">Feature 3</a></li>
-                                <li><a href="#">Feature 4</a></li>
-                                <li><a href="#">Feature 5</a></li>
-                                <li><a href="#">Feature 6</a></li>
-                            </ul>
-                        </nav>
-                        <!-- External Nav -->
-                        <nav id="nav-external" class="border">
-                            <h2>External Links</h2>
-                            <div class="flex">
-                                <ul>
-                                    <li><a href="#">External 1</a></li>
-                                    <li><a href="#">External 2</a></li>
-                                    <li><a href="#">External 3</a></li>
-                                    <li><a href="#">External 4</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">External 5</a></li>
-                                    <li><a href="#">External 6</a></li>
-                                    <li><a href="#">External 7</a></li>
-                                    <li><a href="#">External 8</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+            <article>
+                <img src="img/article.png" alt="image of something"/>
+                <section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis magni suscipit minus voluptatibus similique nobis. Aut exercitationem itaque blanditiis accusantium est. Et nobis quas corrupti magni, rem quasi sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam minus, maiores facere aut commodi. Enim quaerat expedita sit quia fuga consequuntur quasi laborum iure! Sapiente dignissimos maiores asperiores ipsam.</p>
+                </section>   
+            </article>
+            <!--feature nav-->
+            <nav>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                    <li>Feature 6</li>
+                </ul>
+            </nav>
+            <!--external nav-->
+            <nav>
+
+                <h2>External Links</h2>
+                <ul>
+                    <li><a href="#">External 1</a></li>
+                    <li><a href="#">External 2</a></li>
+                    <li><a href="#">External 3</a></li>
+                    <li><a href="#">External 4</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">External 5</a></li>
+                    <li><a href="#">External 6</a></li>
+                    <li><a href="#">External 7</a></li>
+                    <li><a href="#">External 8</a></li>
+ 
+                </ul>
+            </nav>
         </main>
-    </div>
-  </body>
+    </body>
 </html>
