@@ -1,18 +1,98 @@
-body{
-
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
+header {
+  background-color: grey;
+  grid-area: header;
 }
 
-header > div {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+main {
+  grid-area: main;
 }
 
-header > nav {
-    background-color: yellow;
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  max-width: 1366px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+}
+/* Logo and Topic Nav box */
+.header-fr {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  padding: 20px;
+  background-color: pink;
+}
+
+/* Topic nav
+make the ul a grid with four columns
+the child li will automatically occupy the available columns*/
+header > div > nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: justify;
+}
+
+/* Search input */
+header > div > nav > input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* page nav */
+header > nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px;
+  padding: 10px 200px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Main Styling */
+
+main {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  padding: 10px 0;
+}
+
+/* section nav */
+main > nav {
+  background-color: cadetblue;
+  margin-right: 5px;
+  line-height: 30px;
+  padding: 5px;
+}
+
+/* background styling */
+main > div {
+  background-color: fuchsia;
+  display: grid;
+  grid-template-columns: 1fr 15%;
+}
+
+/* feature and external links */
+main > div > div {
+  background-color: gold;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+main > div > article {
+  background-color: honeydew;
+  margin: 0 15%;
+}
+
+main > div > article > img {
+  width: 100%;
 }
